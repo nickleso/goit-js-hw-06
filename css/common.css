@@ -23,6 +23,7 @@ button {
   cursor: pointer;
 }
 
+/* task 3 styles */
 img {
   display: block;
   max-width: 100%;
@@ -39,11 +40,15 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
 
-  background-color: bisque;
   list-style: none;
 }
 
 .gallery__item {
-  text-decoration: none;
   width: 400px;
+  height: 225px;
+  overflow: hidden;
+
+  border: 2px rgb(158, 158, 157) solid;
+  border-radius: 5px;
+  text-decoration: none;
 }
