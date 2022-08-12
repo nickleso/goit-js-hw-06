@@ -1,16 +1,22 @@
 const input = document.querySelector('#validation-input');
 
+input.addEventListener('focus', onInputFocus);
 input.addEventListener('blur', onInputBlur);
 
-function onInputBlur(event) {
-  input.classList.add('invalid');
+console.dir(input);
 
-  if (event.currentTarget.value.length === input.dataset.length) {
+function onInputFocus(event) {
+  input.classList.add('invalid');
+}
+
+function onInputBlur(event) {
+  if (input.value.length === input.dataset.length) {
     input.classList.remove('invalid');
 
     console.log('lost blur');
     input.classList.add('valid');
   }
 
-  console.log(event.currentTarget.value.length);
+  console.log(input.dataset.length);
+  console.log(input.value.length);
 }
