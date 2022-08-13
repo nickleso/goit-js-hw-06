@@ -1,13 +1,8 @@
 const inputEl = document.querySelector('#font-size-control');
 const outputText = document.querySelector('#text');
-outputText.style.fontSize = '24px';
-
-console.dir(inputEl);
-
-// inputRefs.nameOutput.style.fontSize = '50px';
-// inputEl.scrollWidth = 300;
+outputText.style.fontSize = '50px';
 
 inputEl.addEventListener('input', function () {
-  console.log(`${scrollX}px`);
-  outputText.style.fontSize = '120px';
+  console.log(`${inputEl.value}px`);
+  outputText.style.fontSize = `${inputEl.value}px`;
 });
