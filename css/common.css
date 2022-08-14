@@ -48,7 +48,20 @@ img {
   height: 225px;
   overflow: hidden;
 
-  border: 2px rgb(158, 158, 157) solid;
+  border: 2px rgba(158, 158, 157, 0.3) solid;
   border-radius: 5px;
   text-decoration: none;
+}
+
+/* task 3 styles */
+.boxes-container {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.boxes-container__item {
+  border: 1px rgba(158, 158, 157, 0.5) solid;
+  border-radius: 5px;
 }
