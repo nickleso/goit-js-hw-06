@@ -14,8 +14,6 @@ const divColoredBoxContainer = document.querySelector('#boxes');
 
 const elements = [];
 
-inputEl.addEventListener('select', () => {});
-
 // create boxes
 createBtn.addEventListener('click', function () {
   for (let i = 0; i < Number(inputEl.value); i += 1) {
